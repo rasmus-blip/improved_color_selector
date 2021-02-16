@@ -87,11 +87,11 @@ function displayHex(hex) {
 function displayRGB(rgb) {
   document.querySelector(
     "#rgb"
-  ).textContent = `RGB: (${rgb.r}, ${rgb.g}, ${rgb.b}`;
+  ).textContent = `RGB: ${rgb.r}, ${rgb.g}, ${rgb.b}`;
 }
 
 function displayHSL(hsl) {
   document.querySelector(
     "#hsl"
-  ).textContent = `HSL: (${hsl.h}, ${hsl.s}%, ${hsl.s}%)`;
+  ).textContent = `HSL: ${hsl.h}, ${hsl.s}%, ${hsl.s}%`;
 }
