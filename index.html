@@ -5,19 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Color Selector</title>
+    <title>Color Palette Designer</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <input type="color" />
-      <section id="container">
-    <div>
-    <div id="color"></div>
-    <div id="color2"></div>
-    <div id="color3"></div>
-    <p id="hexcode"></p>
-    <p id="rgb"></p>
-    <p id="hsl"></p>
-</section>
+    <div id="pick">
+      <p>Pick a colorscheme:</p>
+      <select name="colorscheme" id="input">
+        <option value="analogous">Analogous</option>
+        <option value="monochromatic">Monochromatic</option>
+        <option value="triad">Triad</option>
+        <option value="complementary">Complementary</option>
+        <option value="compound">Compound</option>
+        <option value="shades">Shades</option>
+      </select>
+
+      <p>Pick a basecolor:</p>
+      <input type="color" id="colorselect" />
+    </div>
+    <section id="container">
+      <div id="colorbox0">
+        <div class="color"></div>
+        <p class="hex"></p>
+        <p id="rgb"></p>
+        <p id="hsl"></p>
+      </div>
+
+      <div id="colorbox1">
+        <div class="color"></div>
+        <p class="hex"></p>
+        <p id="rgb"></p>
+        <p id="hsl"></p>
+      </div>
+
+      <div id="colorbox2">
+        <div class="color"></div>
+        <p class="hex"></p>
+        <p id="rgb"></p>
+        <p id="hsl"></p>
+      </div>
+
+      <div id="colorbox3">
+        <div class="color"></div>
+        <p class="hex"></p>
+        <p id="rgb"></p>
+        <p id="hsl"></p>
+      </div>
+
+      <div id="colorbox4">
+        <div class="color"></div>
+        <p class="hex"></p>
+        <p id="rgb"></p>
+        <p id="hsl"></p>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
